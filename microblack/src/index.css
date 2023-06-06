@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo {
+  position: relative;
+}
+.logo::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  height: 13%;
+  width: 10px;
+  border-radius: 50px;
+  background-color: #414a4d;
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s;
+}
+
+.logo:hover::before {
+  transform: scaleY(1);
+  width: 100%;
+}
+
+.logo .link:link,
+.logo .link:visited {
+  color: #414a4d;
+}
+
+.footer {
+  position: relative;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  height: 13%;
+  width: 10px;
+  border-radius: 50px;
+  background-color: #fff;
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s;
+}
+
+.footer:hover::before {
+  transform: scaleY(1);
+  width: 80%;
+}
+
+.footer .link:link,
+.footer .link:visited {
+  color: white;
+}
