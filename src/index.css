@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .logo {
   position: relative;
 }
@@ -23,10 +29,10 @@
   width: 100%;
 }
 
-.logo .link:link,
+/* .logo .link:link,
 .logo .link:visited {
   color: #414a4d;
-}
+} */
 
 .footer {
   position: relative;

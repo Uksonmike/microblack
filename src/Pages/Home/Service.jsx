@@ -17,7 +17,7 @@ function Service() {
       <section className="text-white grid grid-cols-2 gap-7 absolute lg:px-10 py-5">
         <section className="grid place-items-center">
           <div>
-            <p>What we do</p>
+            <p className="font-bold text-2xl uppercase">What we do</p>
             <h2 className="text-6xl font-bold my-5 text-[#f6df01]">
               Improving Brand Awareness
               <span className="text-white">.</span>
