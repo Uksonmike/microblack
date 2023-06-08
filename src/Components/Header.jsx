@@ -10,8 +10,8 @@ export default function Header({ state, setState }) {
   return (
     <header
       className={`${
-        state ? "bg-[#121212]" : ""
-      } transition-all duration-400 py-5 px-10 text-[#414a4d] font-medium`}
+        state ? "bg-[#121212]" : "bg-white"
+      } transition-all duration-400 py-5 px-10 text-[#414a4d] font-medium fixed w-full z-50 shadow-lg`}
     >
       <nav className="flex justify-between items-center">
         <section className="flex items-center">

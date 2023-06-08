@@ -3,11 +3,13 @@ import React from "react";
 import Hero from "./Hero";
 import Service from "./Service";
 import Operation from "./Operation";
+import Commitment from "./Commitment";
 
 export default function Home() {
   return (
     <>
         <Hero/>
+        <Commitment/>
         <Operation/>
         <Service/>
     </>

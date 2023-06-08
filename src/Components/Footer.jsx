@@ -14,7 +14,7 @@ function Footer() {
 
   return (
     <footer className="">
-      <section className="bg-[#0e171a] py-16 lg:px-10 px-5 grid lg:grid-cols-4 md:grid-cols-2 lg:gap-y-0 md:gap-y-5 text-white">
+      <section className="bg-[#212121] py-16 lg:px-10 px-5 grid lg:grid-cols-4 md:grid-cols-2 lg:gap-y-0 md:gap-y-5 text-white">
         <section className="">
           <div className="w-[200px]">
             <img src={logo} className="w-full" alt="Microblack" />
@@ -89,7 +89,7 @@ function Footer() {
           </div>
         </section>
       </section>
-      <section className="text-center bg-[#00120b] text-white py-10">
+      <section className="text-center bg-[#121212] text-white py-10">
         <p className="font-medium">&copy; {`${year} - Microblack`}</p>
       </section>
     </footer>

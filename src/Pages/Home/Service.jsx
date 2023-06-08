@@ -12,13 +12,13 @@ import Button from "../../Components/Button";
 
 function Service() {
   return (
-    <section className="relative bg-service bg-fixed h-[750px] bg-cover bg-center">
+    <section className="relative bg-service bg-fixed h-[850px] bg-cover bg-center">
       <div className="absolute bg-[#000000c7] h-full w-full"></div>
       <section className="text-white grid grid-cols-2 gap-7 absolute lg:px-10 py-5">
         <section className="grid place-items-center">
-          <div>
+          <div className="">
             <p className="font-bold text-2xl uppercase">What we do</p>
-            <h2 className="text-6xl font-bold my-5 text-[#f6df01]">
+            <h2 className="text-6xl font-bold my-10 text-[#f6df01]">
               Improving Brand Awareness
               <span className="text-white">.</span>
             </h2>
