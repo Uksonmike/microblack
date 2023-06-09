@@ -15,7 +15,7 @@ export default function Commitment() {
       >
         <section className="grid grid-cols-2 gap-10">
           <div>
-            <div className="rounded-lg overflow-hidden">
+            <div className="rounded-lg overflow-hidden ">
               <img src={handshake} alt="" />
             </div>
           </div>
