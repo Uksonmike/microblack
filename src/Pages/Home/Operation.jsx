@@ -8,12 +8,12 @@ function Operation() {
     const [darkMode, setDarkMode] = useOutletContext();
 
   return (
-    <section className={`${darkMode ? "bg-[#212121] text-white" : "bg-[#ece9e6]"} lg:px-10 py-32`}>
+    <section className={`${darkMode ? "bg-[#212121] text-white" : "bg-[#ece9e6]"} lg:px-10 md:px-10 px-5 lg:py-32 py-20`}>
       <div className="">
-        <p className="font-bold uppercase">All you need to know</p>
-        <h2 className="text-6xl font-bold mb-32 mt-5">About Us</h2>
+        <p className="font-bold uppercase md:text-base text-sm">All you need to know</p>
+        <h2 className="lg:text-6xl md:text-5xl text-4xl font-bold lg:mb-32 mb-20 mt-5">About Us</h2>
       </div>
-      <div className="grid grid-cols-3 gap-20 mt-5 justify-center">
+      <div className="grid md:grid-cols-3 lg:gap-20 md:gap-5 mt-5 justify-center">
         <AboutUsTextBox
           heading="Objective"
           text="Our main objective is to help companies achieve their growth and

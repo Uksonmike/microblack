@@ -7,7 +7,7 @@ import { Outlet } from "react-router-dom";
 function Layout() {
   const [darkMode, setDarkMode] = React.useState(false)
   return (
-    <div className="">
+    <div className={darkMode ? "bg-[#121212]" : ""}>
       <Header state={darkMode} setState={setDarkMode}/>
       <main className="">
         <Outlet context={[darkMode, setDarkMode]}/>

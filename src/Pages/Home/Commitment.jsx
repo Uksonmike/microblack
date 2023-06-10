@@ -10,12 +10,12 @@ export default function Commitment() {
     <>
       <section
         className={`${
-          darkMode ? "bg-[#212121] text-white" : "bg-[#fff]"
-        } lg:px-10 py-32`}
+          darkMode ? "bg-[#121212] text-white" : "bg-[#fff]"
+        } md:px-10 px-5 lg:py-32 py-20`}
       >
-        <section className="grid grid-cols-2 gap-10">
+        <section className="grid lg:grid-cols-2 md:grid-cols-17 lg:gap-10 gap-5">
           <div>
-            <div className="rounded-lg overflow-hidden ">
+            <div className="rounded-lg overflow-hidden">
               <img src={handshake} alt="" />
             </div>
           </div>
@@ -23,10 +23,10 @@ export default function Commitment() {
             <p className="font-bold uppercase">
               Expert Support For Startup Growth
             </p>
-            <h2 className="text-6xl font-bold my-5">
-              Unleashing span Startup Potential: Bridging the Resource Gap.
+            <h2 className="lg:text-6xl md:text-3xl text-3xl font-bold my-5">
+              Unleashing Startup Potential: Bridging the Resource Gap.
             </h2>
-            <p className="text-justify">
+            <p className="md:text-justify">
               We understand that startups can face challenges when it comes to
               building in-house teams for crucial functions like growth
               marketing, sales, business development, and partnerships. That’s

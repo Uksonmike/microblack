@@ -9,11 +9,11 @@ import Featured from "./Featured";
 export default function Home() {
   return (
     <>
-        <Hero/>
-        <Commitment/>
-        <Operation/>
-        <Service/>
-        <Featured/>
+      <Hero />
+      <Commitment />
+      <Operation />
+      <Service />
+      <Featured />
     </>
   );
 }

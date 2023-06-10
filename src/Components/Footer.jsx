@@ -7,6 +7,13 @@ import {
   MdOutlinePhone,
   MdOutlineLocationOn,
 } from "react-icons/md";
+import {
+  GrFacebook,
+  GrInstagram,
+  GrLinkedin,
+  GrTwitter,
+  GrYoutube,
+} from "react-icons/gr";
 
 function Footer() {
   const date = new Date();
@@ -23,7 +30,25 @@ function Footer() {
             The Ad hoc growth marketing, sales and business development team
             your startup needs.
           </p>
-          <div></div>
+          <div>
+            <div className="flex items-center mt-5">
+              <a href="#" className="mr-5">
+                <GrFacebook color="#3b5998" size={20}/>
+              </a>
+              <a href="#"  className="mr-5">
+                <GrInstagram color="E4405F" size={20}/>
+              </a>
+              <a href="#"  className="mr-5">
+                <GrLinkedin color="#0072b1" size={20}/>
+              </a>
+              <a href="#"  className="mr-5">
+                <GrYoutube color="#c4302b" size={20}/>
+              </a>
+              <a href="#"  className="mr-5">
+                <GrTwitter color="#00acee" size={20}/>
+              </a>
+            </div>
+          </div>
         </section>
         <section className="">
           <h2 className="lg:mb-[40px] mb-[20px] font-bold text-xl">Company</h2>

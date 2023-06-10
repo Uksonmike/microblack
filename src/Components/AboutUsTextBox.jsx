@@ -10,13 +10,13 @@ function AboutUsTextBox({ children, heading, text }) {
     <div
       className={`${
         darkMode ? "bg-[#212121]" : "bg-[#ece9e6]"
-      }  hover:shadow-2xl transition-all duration-300 px-7 py-10 rounded`}
+      }  hover:shadow-2xl transition-all duration-300 lg:px-7 lg:py-10 py-7 rounded`}
     >
       <div className="bg-[#f6df01] w-[70px] h-[70px] grid place-items-center rounded-full">
         <div className={`${darkMode ? "text-[#212121]" : ""} `}>{children}</div>
       </div>
-      <h3 className="text-2xl font-medium my-5 uppercase">{heading}</h3>
-      <p className="text-justify">{text}</p>
+      <h3 className="md:text-2xl text-xl font-medium my-5 uppercase">{heading}</h3>
+      <p className="lg:text-justify">{text}</p>
     </div>
   );
 }
