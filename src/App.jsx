@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import About from "./Pages/About/About";
+import Contact from "./Pages/Contact/Contact";
 
 
 const router = createBrowserRouter(
@@ -16,7 +17,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />}>
       <Route index element={<Home/>}/>
       <Route path="about" element={<About />}/>
-      <Route path="contact" element={<h1 className="py-[100px]">Contact page goes here</h1>}/>
+      <Route path="contact" element={<Contact/>}/>
     </Route>
   )
 );
