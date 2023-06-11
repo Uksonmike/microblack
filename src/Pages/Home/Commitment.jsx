@@ -9,6 +9,7 @@ export default function Commitment() {
   return (
     <>
       <section
+      id="commitment"
         className={`${
           darkMode ? "bg-[#121212] text-white" : "bg-[#fff]"
         } md:px-10 px-5 lg:py-32 py-20`}
@@ -39,14 +40,6 @@ export default function Commitment() {
           </div>
         </section>
       </section>
-      {darkMode && (
-        <div className="flex justify-center p-10 bg-[#212121]">
-          <div className="bg-[#f6df01] w-3 h-3 rounded-full mx-5"></div>
-          <div className="bg-[#f6df01] w-3 h-3 rounded-full mx-5"></div>
-          <div className="bg-[#f6df01] w-3 h-3 rounded-full mx-5"></div>
-          <div className="bg-[#f6df01] w-3 h-3 rounded-full mx-5"></div>
-        </div>
-      )}
     </>
   );
 }

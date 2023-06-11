@@ -33,19 +33,19 @@ function Footer() {
           <div>
             <div className="flex items-center mt-5">
               <a href="#" className="mr-5">
-                <GrFacebook color="#3b5998" size={20}/>
+                <GrFacebook color="#3b5998" size={20} />
               </a>
-              <a href="#"  className="mr-5">
-                <GrInstagram color="E4405F" size={20}/>
+              <a href="#" className="mr-5">
+                <GrInstagram color="E4405F" size={20} />
               </a>
-              <a href="#"  className="mr-5">
-                <GrLinkedin color="#0072b1" size={20}/>
+              <a href="#" className="mr-5">
+                <GrLinkedin color="#0072b1" size={20} />
               </a>
-              <a href="#"  className="mr-5">
-                <GrYoutube color="#c4302b" size={20}/>
+              <a href="#" className="mr-5">
+                <GrYoutube color="#c4302b" size={20} />
               </a>
-              <a href="#"  className="mr-5">
-                <GrTwitter color="#00acee" size={20}/>
+              <a href="#" className="mr-5">
+                <GrTwitter color="#00acee" size={20} />
               </a>
             </div>
           </div>
@@ -74,13 +74,15 @@ function Footer() {
           <h2 className="lg:mb-[52px] mb-[26px] font-bold text-xl">Office</h2>
           <div className="flex flex-col gap-5">
             <div className="font-medium">
-              <p className="">
-                <span>
-                  <span className="block mb-5">1625B, Saka Jojo</span>
-                  <span className="block mb-5">Victoria Island 101241</span>
-                  <span className="block mb-5">Lagos, Nigeria</span>
-                </span>
-              </p>
+              <a href="https://goo.gl/maps/w89Se85UG1PqDVTU8" target="__blank">
+                <p className="">
+                  <span>
+                    <span className="block mb-5">1625B, Saka Jojo</span>
+                    <span className="block mb-5">Victoria Island 101241</span>
+                    <span className="block mb-5">Lagos, Nigeria</span>
+                  </span>
+                </p>
+              </a>
             </div>
           </div>
         </section>

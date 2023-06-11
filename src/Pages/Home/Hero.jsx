@@ -9,6 +9,7 @@ import animationData from "../../assets/Waves.json";
 import scrolldown from "../../assets/scrolldown.json";
 import Typical from "react-typical";
 import Typer from "../../Components/Typer";
+import { Link } from "react-scroll";
 
 function Hero() {
   const [darkMode, setDarkMode] = useOutletContext();
@@ -82,7 +83,7 @@ function Hero() {
                 team of experts, we identify and leverage growth opportunities
                 to help your business thrive in the competitive market.
               </p>
-              <Button to={"about"} text={"Build Now"} />
+              <Button to={"contact"} text={"Build Now"} />
             </div>
           </section>
           <section className="grid place-items-center relative ">
@@ -92,7 +93,9 @@ function Hero() {
           </section>
         </section>
         <div className="grid m-auto lg:translate-y-[-350px] md:translate-y-[-200px] translate-y-[40px] md:w-[50px] w-[40px]">
-          <Lottie options={defaultOptionsScroll} />
+          <Link to="commitment" smooth={true} duration={1000}>
+            <Lottie options={defaultOptionsScroll} />
+          </Link>
         </div>
       </section>
       <div

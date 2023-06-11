@@ -8,12 +8,12 @@ import Featured from "./Featured";
 
 export default function Home() {
   return (
-    <>
+    <section >
       <Hero />
       <Commitment />
       <Operation />
       <Service />
       <Featured />
-    </>
+    </section>
   );
 }

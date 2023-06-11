@@ -4,7 +4,7 @@ import SliderComponent from "../../Components/SliderComponent"
 
 function Featured() {
   return (
-    <section className="lg:px-20 px-10 lg:py-24 py-24">
+    <section id="commitment" className="lg:px-20 px-10 lg:py-24 py-24">
         <SliderComponent/>
     </section>
   )
