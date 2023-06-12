@@ -31,10 +31,10 @@ function Footer() {
             your startup needs.
           </p>
           <div>
-            <div className="flex items-center mt-5">
-              <a href="#" className="mr-5">
+            <div className="flex items-center my-5">
+              {/* <a href="#" className="mr-5">
                 <GrFacebook color="#3b5998" size={20} />
-              </a>
+              </a> */}
               <a href="#" className="mr-5">
                 <GrInstagram color="E4405F" size={20} />
               </a>

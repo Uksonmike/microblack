@@ -13,7 +13,7 @@ function Contact() {
     message: "",
   });
   const [darkMode, setDarkMode] = useOutletContext();
-  console.log(darkMode);
+ 
 
   const handleChange = (e) => {
     e.preventDefault();
