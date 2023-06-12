@@ -12,7 +12,7 @@ export default function Commitment() {
       id="commitment"
         className={`${
           darkMode ? "bg-[#121212] text-white" : "bg-[#fff]"
-        } md:px-10 px-5 lg:py-32 py-20`}
+        } md:px-10 px-5 lg:py-32 py-20 transition-all duration-300`}
       >
         <section className="grid lg:grid-cols-2 md:grid-cols-17 lg:gap-10 gap-5">
           <div>

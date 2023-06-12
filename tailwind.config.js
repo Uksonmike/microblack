@@ -10,6 +10,7 @@ export default {
         // Simple 16 column grid
         '16': '2fr 1fr',
         '17': '1fr 2fr',
+        '18': '1.5fr 2fr',
       },
       backgroundImage: {
         'service': "url('./src/assets/servicebg.jpg')",
