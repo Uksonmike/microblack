@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import placeholderimg from "../../assets/placeimg.png";
+import placeholderimg2 from "../../assets/picture.png";
 import animationData from "../../assets/Waves.json";
 import scrolldown from "../../assets/scrolldown.json";
 import { useOutletContext } from "react-router-dom";
@@ -32,7 +33,7 @@ function Hero() {
     <section className={`${
         darkMode ? "bg-[#121212] text-white" : ""
       } overflow-hidden transition-all duration-400`}>
-      <section className="grid lg:grid-cols-16 lg:px-[7rem] md:px-10 px-5 lg:py-32 py-20 gap-5">
+      <section className="grid lg:grid-cols-16 lg:px-[7rem] md:px-10 px-5 md:py-32 py-20 gap-5">
         <div className="grid place-items-center lg:-order-1 order-1">
           <div>
             <h2 className="lg:text-6xl md:text-5xl text-3xl font-bold">Core Values</h2>
@@ -75,7 +76,7 @@ function Hero() {
       <section className="grid lg:grid-cols-17 lg:px-[7rem] md:px-10 px-5 lg:py-32 py-20">
         <div className="grid place-items-center">
           <div className="md:w-[400px] w-[200px]">
-            <img src={placeholderimg} alt="" />
+            <img src={placeholderimg2} alt="" />
           </div>
         </div>
         <div className="grid place-items-center">

@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import Hero from './Hero'
-import Solutions from './Solutions'
+import Team from './Team'
 
 function About() {
   return (
     <>
         <Hero/>
-        <Solutions/>
+        <Team/>
     </>
   )
 }

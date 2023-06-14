@@ -22,30 +22,37 @@ const AutoPlay = () => {
     {
       id: 1,
       image: darkMode ? wblackops : blackops,
+      link: "https://blackops.community/"
     },
     {
       id: 2,
       image: darkMode ? wfixit : fixit,
+      link: "https://fixit45.com/"
     },
     {
       id: 3,
       image: iqubelogo,
+      link: "https://www.iqubesolutions.com.ng/"
     },
     {
       id: 4,
       image: labr,
+      link: "https://labr.africa/"
     },
     {
       id: 5,
       image: parkit,
+      link: "https://parkit.ng/"
     },
     {
       id: 6,
       image: darkMode ? wsparklogo : sparklogo,
+      link: "https://sparkafrica.co/"
     },
     {
       id: 7,
       image: yeboxlogo,
+      link: "https://yebox.io/"
     },
   ];
 
@@ -88,9 +95,15 @@ const AutoPlay = () => {
 
   return (
     <div>
-      <div className={`${darkMode ? "text-white":""} text-center mb-20 transition-all duration-400`}>
+      <div
+        className={`${
+          darkMode ? "text-white" : ""
+        } text-center mb-20 transition-all duration-400`}
+      >
         <h2 className="lg:text-5xl font-semibold">Featured Partner</h2>
-        <p className="font-medium">Forging Connections: Presenting Our Exceptional Partner Ecosystem</p>
+        <p className="font-medium">
+          Forging Connections: Presenting Our Exceptional Partner Ecosystem
+        </p>
       </div>
       <Slider {...settings}>
         {element.map((item) => {
@@ -100,7 +113,9 @@ const AutoPlay = () => {
                 key={item.id}
                 className="w-[200px] h-[80px] flex justify-center items-center m-auto"
               >
-                <img className="" src={item.image} alt="" />
+                <a target="__blank" href={item.link}>
+                  <img className="" src={item.image} alt="" />
+                </a>
               </div>
             </div>
           );

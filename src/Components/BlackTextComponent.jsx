@@ -9,7 +9,7 @@ function BlackTextComponent({ children, text, heading }) {
         {children}
       </div>
       <h2 className="text-2xl font-bold my-5">{heading}</h2>
-      <p>{text}</p>
+      <p className="text-justify">{text}</p>
     </div>
   );
 }

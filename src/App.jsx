@@ -10,6 +10,7 @@ import {
 import "./App.css";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
+import Solution from "./Pages/Solution/Solution";
 
 
 const router = createBrowserRouter(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
       <Route index element={<Home/>}/>
       <Route path="about" element={<About />}/>
       <Route path="contact" element={<Contact/>}/>
+      <Route path="solution" element={<Solution/>}/>
     </Route>
   )
 );

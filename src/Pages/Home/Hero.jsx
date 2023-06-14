@@ -1,14 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Button from "../../Components/Button";
-import img from "../../assets/light.png";
-import { RxThickArrowDown } from "react-icons/rx";
 import { useOutletContext } from "react-router-dom";
 import Lottie from "react-lottie";
 import animationData from "../../assets/Waves.json";
 import scrolldown from "../../assets/scrolldown.json";
 import rocket from "../../assets/rocket.json";
-import Typical from "react-typical";
 import Typer from "../../Components/Typer";
 import { Link } from "react-scroll";
 import logow from "../../assets/logow.png"
@@ -85,7 +81,8 @@ function Hero() {
                 team of experts, we identify and leverage growth opportunities
                 to help your business thrive in the competitive market.
               </p>
-              <Button to={"contact"} text={"Contact Us"} />
+              <a className="px-6 py-2 rounded-3xl bg-[#f6df01] hover:bg-[#f6c501] grid place-items-center text-[#333] font-semibold w-[200px]" href="https://calendly.com/microblack/30min" target="__blank">Schedule Call</a>
+              {/* <Button to={"contact"} text={"Schedule Call"} /> */}
             </div>
           </section>
           <section className="grid place-items-center">

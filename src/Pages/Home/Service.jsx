@@ -60,21 +60,19 @@ function Service() {
       <section className="text-white grid lg:grid-cols-2 md:grid-rows-2 gap-7 absolute lg:px-10 md:px-10 px-5 py-5">
         <section className="grid place-items-center">
           <div className="">
-            <p className="font-bold lg:text-2xl text-xl uppercase">
+            {/* <p className="font-bold lg:text-2xl text-xl uppercase">
               What we do
-            </p>
+            </p> */}
             <h2 className="lg:text-6xl md:text-4xl font-bold lg:my-10 my-5 text-[#f6df01]">
-              Improving Brand Awareness.
+              Value Proposition.
             </h2>
-            <p className="mb-5">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum est
-              voluptates sint inventore velit accusantium reprehenderit quisquam
-              rerum quibusdam, deserunt eos harum? Facere a velit fugiat maiores
-              optio sequi aliquam aut, cupiditate consequuntur nam error.
-              Architecto commodi maxime eum doloribus sit reiciendis? Quas
-              corporis minus, placeat ex maiores modi eius.
+            <p className="mb-5 text-2xl text-justify">
+              Microblack provides you with the flexibility, cost-effectiveness,
+              and a diverse range of expertise to execute growth marketing,
+              sales and business development goals. This can be especially
+              important for companies that are just starting out.
             </p>
-            <ul className="">
+            {/* <ul className="">
               <li className="flex items-center my-5">
                 <span className="mr-2">
                   <MdVerified color="#f6df01" />
@@ -120,33 +118,37 @@ function Service() {
                   Blanditiis, quae?
                 </span>
               </li>
-            </ul>
+            </ul> */}
             <Button text={"More Info"} to={"about"} />
           </div>
         </section>
         <section className="">
           <div className="grid md:grid-cols-2 gap-5 translate-y-6">
             <BlackTextComponent
-              text="By creating targeted campaigns and landing pages, Microblack
-            helps startups generate leads and convert them into customers."
-              heading="Generating leads and Conversion"
+              text="At Microblack, we help increase your
+              company's visibility online and build its
+              reputation through tactics such as content
+              marketing, social media marketing, and
+              influencer marketing."
+              heading="Improving Brand Awareness"
             >
               <Lottie className options={twoPeople} />
               {/* <MdSportsKabaddi color="#f6df01" size={24} /> */}
             </BlackTextComponent>
             <BlackTextComponent
               heading="Generating leads and Conversion"
-              text="By creating targeted campaigns and landing pages, Microblack
-            helps startups generate leads and convert them into customers."
+              text="By creating targeted campaigns and
+              landing pages, Microblack helps startups
+              generate leads and convert them into
+              customers."
             >
               <Lottie className options={network} />
               {/* <MdEngineering color="#f6df01" size={24} /> */}
             </BlackTextComponent>
 
             <BlackTextComponent
-              text="By creating targeted campaigns and landing pages, Microblack
-              helps startups generate leads and convert them into customers."
-              heading="Generating leads and Conversion"
+              text="Using tactics such as email marketing and social media marketing, we improve customer engagement and build longlasting relationships with customers."
+              heading="Enhancing Customer Engagement"
             >
               <Lottie className options={generate} />
               {/* <MdOutlineLeaderboard color="#f6df01" size={24} /> */}
@@ -154,7 +156,7 @@ function Service() {
             <BlackTextComponent
               text="By creating targeted campaigns and landing pages, Microblack
               helps startups generate leads and convert them into customers."
-              heading="Generating leads and Conversion"
+              heading="Measuring And Analyzing Performance"
             >
               <Lottie className options={peoplee} />
               {/* <MdOutlineAssignment color="#f6df01" size={24} /> */}

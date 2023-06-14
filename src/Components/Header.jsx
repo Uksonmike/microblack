@@ -61,17 +61,21 @@ export default function Header({ state, setState }) {
                 HOME
               </Link>
             </div>
-            {/* <div className="logo px-1 py-3  rounded" to={"/"}>
-              <Link to={"blog"} className={`${state ? "text-white" : ""} link`}>
-                BLOG
-              </Link>
-            </div> */}
+
             <div className="logo px-1 py-3  rounded" to={"/"}>
               <Link
                 to={"about"}
                 className={`${state ? "text-white" : ""} link`}
               >
                 ABOUT
+              </Link>
+            </div>
+            <div className="logo px-1 py-3  rounded" to={"/"}>
+              <Link
+                to={"solution"}
+                className={`${state ? "text-white" : ""} link`}
+              >
+                SOLUTION
               </Link>
             </div>
           </div>
@@ -100,15 +104,13 @@ export default function Header({ state, setState }) {
         >
           <ul className="md:text-[20px]">
             <Link to="" className="links" onClick={handleNav}>
-              <li className="my-[10px] mb-[30px] hover:cursor-pointer">
-                HOME
-              </li>
+              <li className="my-[10px] mb-[30px] hover:cursor-pointer">HOME</li>
             </Link>
-            {/* <Link to="" className="links" onClick={handleNav}>
-              <li className="mb-[30px] hover:cursor-pointer">BLOG</li>
-            </Link> */}
-            <Link to="" className="links" onClick={handleNav}>
+            <Link to="about" className="links" onClick={handleNav}>
               <li className="mb-[30px] hover:cursor-pointer">ABOUT</li>
+            </Link>
+            <Link to="solution" className="links" onClick={handleNav}>
+              <li className="mb-[30px] hover:cursor-pointer">SOLUTION</li>
             </Link>
             <Link
               onClick={handleNav}

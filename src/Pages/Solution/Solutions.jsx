@@ -101,13 +101,13 @@ function Solutions() {
     },
     {
       id: 6,
-      heading: "Business Development",
+      heading: "Sales and Business Development Leadership",
       text: "Strategic partnerships can be game-changers for startups seeking growth and market expansion. At Microblack, we have the expertise and network to help you forge meaningful partnerships that drive mutual success. Our business development team identifies and evaluates potential collaboration opportunities, negotiates favorable terms, and facilitates partnerships that align with your business goals. Whether it's securing distribution channels, accessing new markets, or leveraging complementary technologies.",
       lottie: business,
     },
   ];
   return (
-    <section className="md:px-10 px-5 lg:py-32 py-20">
+    <section id="solutions" className="md:px-10 px-5 lg:py-32 py-20">
       <div
         className={`${
           darkMode ? " text-white" : ""
@@ -115,8 +115,7 @@ function Solutions() {
       >
         <h2 className="text-4xl font-semibold mb-2">Our Solutions</h2>
         <p className="font-medium">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea facilis
-          hic illum blanditiis quod? At nihil et iusto numquam recusandae?
+        Unlocking Success through Tailored Solutions: Empowering Startups with Strategic Sales, Business Development, and Growth Marketing Strategies.
         </p>
       </div>
       <section className="grid lg:grid-cols-3 md:grid-cols-2 gap-10">

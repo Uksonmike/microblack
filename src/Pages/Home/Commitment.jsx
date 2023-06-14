@@ -9,7 +9,7 @@ export default function Commitment() {
   return (
     <>
       <section
-      id="commitment"
+        id="commitment"
         className={`${
           darkMode ? "bg-[#121212] text-white" : "bg-[#fff]"
         } md:px-10 px-5 lg:py-32 py-20 transition-all duration-300`}
@@ -21,11 +21,12 @@ export default function Commitment() {
             </div>
           </div>
           <div className="flex flex-col justify-center">
-            <p className="font-bold uppercase">
-              Expert Support For Startup Growth
+            <p className="font-bold uppercase text-sm">
+              The Ad hoc growth marketing, sales, and business development team
+              your startup needs
             </p>
             <h2 className="lg:text-6xl md:text-3xl text-3xl font-bold my-5">
-              Unleashing Startup Potential: Bridging the Resource Gap.
+              Unleashing Startup Potential.
             </h2>
             <p className="md:text-justify">
               We understand that startups can face challenges when it comes to
