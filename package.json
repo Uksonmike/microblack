@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/Uksonmike/microblack",
+  "homepage": "https://uksonmike.github.io/microblack/",
   "name": "microblack",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
