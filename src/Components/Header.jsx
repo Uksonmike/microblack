@@ -64,7 +64,7 @@ export default function Header({ state, setState }) {
 
             <div className="logo px-1 py-3  rounded" to={"/"}>
               <Link
-                to={"about"}
+                to={"/about"}
                 className={`${state ? "text-white" : ""} link`}
               >
                 ABOUT
@@ -72,7 +72,7 @@ export default function Header({ state, setState }) {
             </div>
             <div className="logo px-1 py-3  rounded" to={"/"}>
               <Link
-                to={"solution"}
+                to={"/solution"}
                 className={`${state ? "text-white" : ""} link`}
               >
                 SOLUTION
@@ -89,7 +89,7 @@ export default function Header({ state, setState }) {
           </button>
           <Link
             className="px-6 py-2 rounded-3xl bg-[#f6df01] hover:bg-[#f6c501] md:grid place-items-center text-[#333] hidden"
-            to={"contact"}
+            to={"/contact"}
           >
             CONTACT
           </Link>
@@ -103,19 +103,19 @@ export default function Header({ state, setState }) {
           }
         >
           <ul className="md:text-[20px]">
-            <Link to="" className="links" onClick={handleNav}>
+            <Link to="/" className="links" onClick={handleNav}>
               <li className="my-[10px] mb-[30px] hover:cursor-pointer">HOME</li>
             </Link>
-            <Link to="about" className="links" onClick={handleNav}>
+            <Link to="/about" className="links" onClick={handleNav}>
               <li className="mb-[30px] hover:cursor-pointer">ABOUT</li>
             </Link>
-            <Link to="solution" className="links" onClick={handleNav}>
+            <Link to="/solution" className="links" onClick={handleNav}>
               <li className="mb-[30px] hover:cursor-pointer">SOLUTION</li>
             </Link>
             <Link
               onClick={handleNav}
               className="px-6 py-2 rounded-3xl bg-[#f6df01] hover:bg-[#f6c501] md:grid place-items-center text-[#333]"
-              to={"contact"}
+              to={"/contact"}
             >
               CONTACT
             </Link>

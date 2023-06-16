@@ -56,7 +56,7 @@ function Hero() {
               <div className="lg:w-auto md:w-[200px] w-[200px] lg:mb-10 mb-5">
                 <img src={darkMode ? logow : logob} alt="" />
               </div>
-              <p className="lg:text-xl md:text-lg font-semibold uppercase">
+              <div className="lg:text-xl md:text-lg font-semibold uppercase">
                 <Typer
                   dataText={[
                     "The Ad hoc growth marketing, sales, and business development team your startup needs.",
@@ -72,7 +72,7 @@ function Hero() {
                     "Driving revenue for early-stage ventures.",
                   ]}
                 />
-              </p>
+              </div>
               <p className="lg:my-10 my-5 md:text-justify">
                 Are you a tech startup looking to accelerate your growth and
                 achieve your revenue goals? At Microblack, we specialize in

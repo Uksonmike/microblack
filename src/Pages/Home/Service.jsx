@@ -1,13 +1,5 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import img from "../../assets/servicebg.jpg";
-import {
-  MdSportsKabaddi,
-  MdVerified,
-  MdOutlineLeaderboard,
-  MdEngineering,
-  MdOutlineAssignment,
-} from "react-icons/md";
 import Button from "../../Components/Button";
 import BlackTextComponent from "../../Components/blackTextComponent";
 import Lottie from "react-lottie";
@@ -55,14 +47,11 @@ function Service() {
   };
 
   return (
-    <section className="relative bg-service bg-fixed lg:h-[850px] md:h-[1450px] h-[2190px] bg-cover bg-center">
+    <section className="relative bg-[url('https://images.unsplash.com/photo-1573167507387-6b4b98cb7c13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80')] bg-fixed lg:h-[850px] md:h-[1450px] h-[2190px] bg-cover bg-center">
       <div className="absolute bg-[#000000c7] h-full w-full"></div>
       <section className="text-white grid lg:grid-cols-2 md:grid-rows-2 gap-7 absolute lg:px-10 md:px-10 px-5 py-5">
         <section className="grid place-items-center">
           <div className="">
-            {/* <p className="font-bold lg:text-2xl text-xl uppercase">
-              What we do
-            </p> */}
             <h2 className="lg:text-6xl md:text-4xl font-bold lg:my-10 my-5 text-[#f6df01]">
               Value Proposition.
             </h2>
@@ -72,54 +61,7 @@ function Service() {
               sales and business development goals. This can be especially
               important for companies that are just starting out.
             </p>
-            {/* <ul className="">
-              <li className="flex items-center my-5">
-                <span className="mr-2">
-                  <MdVerified color="#f6df01" />
-                </span>
-                <span>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Blanditiis, quae?
-                </span>
-              </li>
-              <li className="flex items-center my-5">
-                <span className="mr-2">
-                  <MdVerified color="#f6df01" />
-                </span>
-                <span>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Blanditiis, quae?
-                </span>
-              </li>
-              <li className="flex items-center my-5">
-                <span className="mr-2">
-                  <MdVerified color="#f6df01" />
-                </span>
-                <span>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Blanditiis, quae?
-                </span>
-              </li>
-              <li className="flex items-center my-5">
-                <span className="mr-2">
-                  <MdVerified color="#f6df01" />
-                </span>
-                <span>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Blanditiis, quae?
-                </span>
-              </li>
-              <li className="flex justify-items-center mb-10">
-                <span className="mr-2">
-                  <MdVerified color="#f6df01" />
-                </span>
-                <span>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Blanditiis, quae?
-                </span>
-              </li>
-            </ul> */}
-            <Button text={"More Info"} to={"about"} />
+            <Button text={"More Info"} to={"/about"} />
           </div>
         </section>
         <section className="">
@@ -133,7 +75,6 @@ function Service() {
               heading="Improving Brand Awareness"
             >
               <Lottie className options={twoPeople} />
-              {/* <MdSportsKabaddi color="#f6df01" size={24} /> */}
             </BlackTextComponent>
             <BlackTextComponent
               heading="Generating leads and Conversion"
@@ -143,7 +84,6 @@ function Service() {
               customers."
             >
               <Lottie className options={network} />
-              {/* <MdEngineering color="#f6df01" size={24} /> */}
             </BlackTextComponent>
 
             <BlackTextComponent
@@ -151,7 +91,6 @@ function Service() {
               heading="Enhancing Customer Engagement"
             >
               <Lottie className options={generate} />
-              {/* <MdOutlineLeaderboard color="#f6df01" size={24} /> */}
             </BlackTextComponent>
             <BlackTextComponent
               text="By creating targeted campaigns and landing pages, Microblack
@@ -159,7 +98,6 @@ function Service() {
               heading="Measuring And Analyzing Performance"
             >
               <Lottie className options={peoplee} />
-              {/* <MdOutlineAssignment color="#f6df01" size={24} /> */}
             </BlackTextComponent>
           </div>
         </section>

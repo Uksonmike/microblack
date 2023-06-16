@@ -22,37 +22,37 @@ const AutoPlay = () => {
     {
       id: 1,
       image: darkMode ? wblackops : blackops,
-      link: "https://blackops.community/"
+      link: "https://blackops.community/",
     },
     {
       id: 2,
       image: darkMode ? wfixit : fixit,
-      link: "https://fixit45.com/"
+      link: "https://fixit45.com/",
     },
     {
       id: 3,
       image: iqubelogo,
-      link: "https://www.iqubesolutions.com.ng/"
+      link: "https://www.iqubesolutions.com.ng/",
     },
     {
       id: 4,
       image: labr,
-      link: "https://labr.africa/"
+      link: "https://labr.africa/",
     },
     {
       id: 5,
       image: parkit,
-      link: "https://parkit.ng/"
+      link: "https://parkit.ng/",
     },
     {
       id: 6,
       image: darkMode ? wsparklogo : sparklogo,
-      link: "https://sparkafrica.co/"
+      link: "https://sparkafrica.co/",
     },
     {
       id: 7,
       image: yeboxlogo,
-      link: "https://yebox.io/"
+      link: "https://yebox.io/",
     },
   ];
 
@@ -108,11 +108,8 @@ const AutoPlay = () => {
       <Slider {...settings}>
         {element.map((item) => {
           return (
-            <div className="">
-              <div
-                key={item.id}
-                className="w-[200px] h-[80px] flex justify-center items-center m-auto"
-              >
+            <div key={item.id}>
+              <div className="w-[200px] h-[80px] flex justify-center items-center m-auto">
                 <a target="__blank" href={item.link}>
                   <img className="" src={item.image} alt="" />
                 </a>

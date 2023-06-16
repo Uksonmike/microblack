@@ -52,7 +52,7 @@ function Hero() {
               <h1 className="lg:text-6xl md:text-4xl text-3xl font-bold uppercase lg:mb-10 mb-5">
                 Our Solutions
               </h1>
-              <p className="lg:text-xl md:text-lg font-semibold uppercase">
+              <div className="lg:text-xl md:text-lg font-semibold uppercase">
                 <Typer
                   dataText={[
                     "Unlocking Success through Tailored Solutions: Empowering Startups with Strategic Sales, Business Development, and Growth Marketing Strategies.",
@@ -60,7 +60,7 @@ function Hero() {
                     "Driving Startup Excellence: Amplify Your Business Potential.",
                   ]}
                 />
-              </p>
+              </div>
             </div>
           </section>
           <section className="grid place-items-center">

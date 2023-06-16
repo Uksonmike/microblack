@@ -35,16 +35,28 @@ function Footer() {
               {/* <a href="#" className="mr-5">
                 <GrFacebook color="#3b5998" size={20} />
               </a> */}
-              <a target="__blank" href="https://www.instagram.com/_microblack/" className="mr-5">
+              <a
+                target="__blank"
+                href="https://www.instagram.com/_microblack/"
+                className="mr-5"
+              >
                 <GrInstagram color="E4405F" size={20} />
               </a>
-              <a target="__blank" href="https://www.linkedin.com/company/microblack/" className="mr-5">
+              <a
+                target="__blank"
+                href="https://www.linkedin.com/company/microblack/"
+                className="mr-5"
+              >
                 <GrLinkedin color="#0072b1" size={20} />
               </a>
               {/* <a href="#" className="mr-5">
                 <GrYoutube color="#c4302b" size={20} />
               </a> */}
-              <a target="__blank" href="https://twitter.com/_Microblack" className="mr-5">
+              <a
+                target="__blank"
+                href="https://twitter.com/_Microblack"
+                className="mr-5"
+              >
                 <GrTwitter color="#00acee" size={20} />
               </a>
             </div>
@@ -58,14 +70,15 @@ function Footer() {
                 Home
               </Link>
             </div>
+
             <div className="footer py-2  rounded w-[60px]">
-              <Link className="link" to={"blog"}>
-                Blog
+              <Link className="link" to={"/about"}>
+                About
               </Link>
             </div>
             <div className="footer py-2  rounded w-[60px]">
-              <Link className="link" to={"about"}>
-                About
+              <Link className="link" to={"/solution"}>
+                Solution
               </Link>
             </div>
           </div>
