@@ -43,7 +43,7 @@ export default class Typer extends React.Component {
 
   render() {
     return (
-      <h1>{ this.props.heading }&nbsp;
+      <h1>
         <span>{ this.state.text }</span>
         <span id="cursor"></span>
       </h1>

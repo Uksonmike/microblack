@@ -86,9 +86,6 @@ function Hero() {
             </div>
           </section>
           <section className="grid place-items-center">
-            {/* <div className="lg:w-[400px] md:w-[280px] absolute -top-[89px] lg:right-[50px]">
-              <img src={img} className="w-full" alt="" />
-            </div> */}
             <div className="lg:w-[400px] md:w-[380px] w-[200px] md:-rotate-90 -rotate-45">
             <Lottie options={rocketAnime} />
             </div>

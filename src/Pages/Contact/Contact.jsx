@@ -1,85 +1,38 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import TextInput from "../../Components/TextInput";
 import Typer from "../../Components/Typer";
 import { useOutletContext } from "react-router-dom";
 import Button from "../../Components/Button";
 import ScrollToTop from "../../Components/ScrollToTop";
+import emailjs from 'emailjs-com';
 import axios from "axios";
 
 function Contact() {
-  const [errorMessage, setErrorMessage] = useState(null);
-  const [formData, setFormData] = useState({
-    fname: "",
-    email: "",
-    message: "",
-  });
+  const [message, setMessage] = useState(null);
+  const form = useRef();
   const [darkMode, setDarkMode] = useOutletContext();
 
-  const handleChange = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    const { name, value } = e.target;
-    setFormData((prevState) => {
-      return {
-        ...prevState,
-        [name]: value,
-      };
-    });
-  };
 
-  function handleClick(e) {
-    setErrorMessage(null);
-    e.preventDefault();
-    if (
-      formData.fname === "" ||
-      formData.message === "" ||
-      formData.email === ""
-      // setErrorMessage("Message sent successfully")
-    ) {
-      setErrorMessage("Please fill all fields");
-      return;
-    }
-    axios
-      .post(mailingAPI, mailingData)
-      .then((response) => {
-        // console.log(response);
-        setShowModal(true);
-        setFormData({
-          fname: "",
-          email: "",
-          message: "",
-        });
-      })
-      .catch((error) => {
-        console.error(error);
-        if (error.response.status === 401 || error.response.status === 403) {
-          setErrorMessage(error.response.data.message);
-        } else {
-          setErrorMessage(
-            "Sorry... something went wrong on our side, please try again"
-          );
-        }
+    emailjs.sendForm('service_hmcopfe', 'template_z6sy1of', form.current, 'OnkE6VH1H81vvXA4R')
+      .then((result) => {
+          console.log(result.text);
+          setMessage(result.text)
+          setTimeout(() => {
+            setMessage('');
+          }, 3000); // Set the timeout duration (in milliseconds)
+          form.current.reset();
+      }, (error) => {
+          console.log(error.text);
+          setTimeout(() => {
+            setMessage('');
+          }, 3000); // Set the timeout duration (in milliseconds)
       });
-    // console.log(formData)
-  }
-
-  const mailingAPI =
-    "/api/mail";
-
-  const mailingData = {
-    config: {
-      fromEmailAddress: "gerald@geraldblack.co",
-      toEmailAddress: "michaelukpongson91@gmail.com",
-    },
-    body: {
-      subject: "Contact Form",
-      message: `<strong>Name: ${formData.firstname} ${formData.lastname}</strong><br>
-          <strong>Email:</strong> ${formData.email}<br>
-          <strong>Phone:</strong> ${formData.phone}<br>
-          <strong>message:</strong> ${formData.message}`,
-    },
   };
+
   return (
     <>
       <ScrollToTop />
@@ -107,16 +60,14 @@ function Contact() {
         </div>
         <section className="grid md:grid-cols-18 gap-5">
           <div>
-            <div className="border p-10 rounded shadow-xl">
-              <div>
+            <div className="border lg:p-10 p-5 rounded shadow-xl">
+              <form ref={form} onSubmit={sendEmail}>
                 <TextInput
                   mode={darkMode}
                   title="Name"
                   placeholder="John Doe"
-                  name="fname"
+                  name="name"
                   type="text"
-                  value={formData.name}
-                  handleChange={handleChange}
                 />
                 <TextInput
                   mode={darkMode}
@@ -124,8 +75,6 @@ function Contact() {
                   placeholder="Johndoe@mail.com"
                   name="email"
                   type="email"
-                  value={formData.email}
-                  handleChange={handleChange}
                 />
                 <label htmlFor="message" className="block text-lg font-medium">
                   Message
@@ -140,12 +89,11 @@ function Contact() {
                     cols="30"
                     rows="5"
                     placeholder="We'd love to hear from you"
-                    value={formData.message}
-                    onChange={handleChange}
                   />
                 </label>
-              </div>
-              <Button handleClick={handleClick} text="Send Message" />
+                {message === "OK" && <small className="flex justify-end -mt-5">Message sent successfully</small>}
+                <input type="submit" value="Send" className="px-6 py-2 rounded-3xl bg-[#f6df01] hover:bg-[#f6c501] grid place-items-center text-[#333] font-semibold cursor-pointer"/>
+              </form>
             </div>
           </div>
           <div>
